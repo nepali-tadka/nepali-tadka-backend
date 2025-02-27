@@ -14,14 +14,13 @@ app.use(express.json());
 
 connectDB();
 
-app.use("/", (req, res) => {
-  res.json({ message: "Welcome to Nepali Tadka API" });
-});
-
 app.use("/api/recipes", recipeRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/reviews", reviewRoutes);
+app.use("/", (req, res) => {
+  res.json({ message: "Welcome to Nepali Tadka API" });
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
