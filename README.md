@@ -118,5 +118,5 @@ nepali-tadka-backend
 2. After installation, run the command:
 
    ```sh
-   mongod --dbpath ./recipe-book/recipe-book-database/ --logpath ./recipe-book/recipe-book-database/logs.log
+   mongod --dbpath ./nepali-tadka/nepali-tadka-database/ --logpath ./nepali-tadka/nepali-tadka-database/logs.log
    ```
